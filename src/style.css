@@ -1,0 +1,234 @@
+
+:root
+{
+    --black: #202020;
+    --grey: #909090;
+    --dark-grey: #707070; 
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+
+main
+{
+    background-color: #fafafa;
+}
+
+footer
+{
+    color: #fff;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    border-top: var(--black) solid 1px;
+}
+
+footer p
+{
+    padding: 25px;
+    font-size: 18px;
+}
+
+.header
+{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-logo
+{
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.header-logo-image
+{
+    width: 200px;
+    transition: all .5s;
+}
+
+.header-logo-image:hover
+{
+    width: 225px;
+}
+
+.nav
+{
+    background-color: var(--black);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list li
+{
+    position: relative;
+}
+
+.nav-list li:hover ul.nav-dropdown
+{
+    display: block;
+}
+
+.nav-list a
+{
+    color: var(--grey);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.nav-list a:hover
+{
+    color: var(--dark-grey);
+    text-decoration: underline;
+}
+
+.nav-dropdown
+{
+    width: 100%;
+    display: none;
+    list-style: none;
+    text-align: center;
+    background-color: var(--black);
+    position: absolute;
+    z-index: 999;
+    padding-top: 20px;
+}
+
+.nav-dropdown a
+{
+    text-transform: none;
+    display: block;
+    padding: 10px;
+}
+
+.nav-dropdown a:hover
+{
+    color: var(--black);
+    background-color: var(--dark-grey);
+}
+
+.container
+{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px 20px 20px;
+    background-color: #fff;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4), -3px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.introduction
+{
+    padding-top: 50px;
+}
+
+.introduction-title
+{
+    font-size: 28px;
+}
+
+.introduction-text
+{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.article
+{
+    margin-top: 35px;
+}
+
+.article-content
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.article-content-text
+{
+    font-size: 18px;
+}
+
+.article-content-text p
+{
+    padding: 10px 0;
+}
+
+.article-content-text-list
+{
+    list-style-position: inside;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.article-content-text-list-link
+{
+    color: var(--black);
+}
+
+.article-content-text-list-link:hover
+{
+    color: var(--dark-grey);
+}
+
+.article-content-image
+{
+    width: 350px;
+    margin: 10px 50px;
+    border-radius: 2.5px;
+}
+
+.article-comeback-button
+{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+.article-comeback-button:hover
+{
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
